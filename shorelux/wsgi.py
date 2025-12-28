@@ -14,3 +14,7 @@ from django.core.wsgi import get_wsgi_application
 os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'shorelux.settings')
 
 application = get_wsgi_application()
+
+# for superuser ADD THIS
+from admin_management.bootstrap_admin import create_bootstrap_admin
+create_bootstrap_admin()

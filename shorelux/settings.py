@@ -14,6 +14,7 @@ from pathlib import Path
 from datetime import timedelta
 from corsheaders.defaults import default_headers
 
+
 import os
 from dotenv import load_dotenv
 
@@ -85,10 +86,9 @@ CSRF_TRUSTED_ORIGINS = [
 ]
 
 CORS_ALLOW_HEADERS = list(default_headers) + [
-    'authorization',
+    "authorization",
+    "content-type",
 ]
-
-
 
 
 ROOT_URLCONF = 'shorelux.urls'

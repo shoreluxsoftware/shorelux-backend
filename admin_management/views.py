@@ -1,4 +1,4 @@
-# accounts/views.py
+# admin_management/views.py
 
 import logging
 from django.db import IntegrityError, transaction
